@@ -8,24 +8,26 @@
     "net6.0": []
   },
   "packageFolders": {
-    "/Users/freddypalacios/.nuget/packages/": {}
+    "C:\\Users\\DELL\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/freddypalacios/DA2(2023)/ColecDictionary/ColecDictionary.csproj",
+      "projectUniqueName": "C:\\Users\\Public\\Repositorio Freddy 2023\\ColecDictionary\\ColecDictionary.csproj",
       "projectName": "ColecDictionary",
-      "projectPath": "/Users/freddypalacios/DA2(2023)/ColecDictionary/ColecDictionary.csproj",
-      "packagesPath": "/Users/freddypalacios/.nuget/packages/",
-      "outputPath": "/Users/freddypalacios/DA2(2023)/ColecDictionary/obj/",
+      "projectPath": "C:\\Users\\Public\\Repositorio Freddy 2023\\ColecDictionary\\ColecDictionary.csproj",
+      "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Public\\Repositorio Freddy 2023\\ColecDictionary\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/freddypalacios/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -49,31 +51,16 @@
           "net47",
           "net471",
           "net472",
-          "net48",
-          "net481"
+          "net48"
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[6.0.16, 6.0.16]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.osx-x64",
-            "version": "[6.0.16, 6.0.16]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[6.0.16, 6.0.16]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
