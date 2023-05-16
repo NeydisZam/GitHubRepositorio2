@@ -8,7 +8,11 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ColecDictionary
 <<<<<<< HEAD
+<<<<<<< HEAD
 build_property.ProjectDir = c:\Users\Public\Repositorio Neydis 2023\ColecDictionary\
 =======
 build_property.ProjectDir = C:\Users\Public\Repositorio Neydis 2023\ColecDictionary\
 >>>>>>> VersionSimple
+=======
+build_property.ProjectDir = c:\Users\Public\Repositorio Neydis 2023\ColecDictionary\
+>>>>>>> versionSimple
