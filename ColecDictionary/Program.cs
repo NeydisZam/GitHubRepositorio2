@@ -19,6 +19,12 @@ int minDep = Poblacion.Min();
 string maxDepkey = "", minDepkey = "";
 
 <<<<<<< HEAD
+//mostrar el diccionario sin ordenar
+Console.WriteLine($"datos Desordenados");
+foreach (var item in diccionario)
+Console.WriteLine($"{item.key,-20}==>{item.value,10:NO");
+Console.WriteLine();
+//Ordenando con LINQ OrderBy el diccionario
 Console.WriteLine($"mayor Población:{maxDepkey}");
 Console.WriteLine($"menor Población:{minDepkey}");
 =======
