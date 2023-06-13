@@ -1,66 +1,39 @@
-﻿<<<<<<< HEAD
-﻿
-
-
-using System.Collections;
-=======
-﻿using System.Collections;
-//definicion e inicializacion de los arreglos en paralelo y el diccionario
->>>>>>> VersionSimple
-String[] Departamento = { "Boaco", "Carazo", "Chinandega", "Chontales", "Costa Caribe Norte", "Costa Caribe Sur", "Estelí", "Granada", "Jinotega", "León", "Madriz", "Managua", "Masaya", "Matagalpa", "Nueva Segovia", "Río San Juan", "Rivas" };
-int[] Poblacion = { 185013, 197139, 439906, 190863, 530586, 414543, 229866, 214317, 475630, 421050, 174744, 1546939, 391903, 593503, 271581, 135446, 182645 };
-Dictionary<string, int> diccionario = Departamento
-          .Zip(Poblacion, (k, v) => new { Clave = k, Valor = v })
-          .ToDictionary(x => x.Clave, x => x.Valor);
-<<<<<<< HEAD
-
-int maxDep = Poblacion.Max();
-int minDep = Poblacion.Min();
-string maxDepkey = "", minDepkey = "";
-
-<<<<<<< HEAD
-//mostrar el diccionario sin ordenar
-Console.WriteLine($"datos Desordenados");
-foreach (var item in diccionario)
-Console.WriteLine($"{item.key,-20}==>{item.value,10:NO");
-Console.WriteLine();
-//Ordenando con LINQ OrderBy el diccionario
-Console.WriteLine($"mayor Población:{maxDepkey}");
-Console.WriteLine($"menor Población:{minDepkey}");
-=======
-Console.WriteLine($"Departamento con mayor Población:{maxDepkey}");
-Console.WriteLine($"Departamento con menor Población:{minDepkey}");
-//Sumar todas las pblaciones con SUM de LINQ
-Console.WriteLine($"Población General:{Poblacion.Sum():N0}");
-Console.WriteLine($"Departamento con mayor Población:{maxDepkey}");
-Console.WriteLine($"Departamento con menor Población:{minDepkey}");
->>>>>>> versionSimple
-for (var i = 0; i < Poblacion.Length; i++)
+﻿//programa que permita visualizar los departamentos de nicaragua con
+//su cantidad poblacional.
+//Encuentra el mayor, menor y ordene los datos
+using Departamentos;
+//Lista de departamentos
+List<depto>LstDeptos= new List <depto>()
 {
-    if (Poblacion[i] == maxDep)
-        maxDepkey = Departamento[i];
-    if (Poblacion[i] == minDep)
-        minDepkey = Departamento[i];
+    new depto ("Boaco",185013),
+    new depto ("Carazo",197139),
+    new depto ("Chinandega",439906),
+    new depto ("Chontales",190863),
+    new depto ("Costa Caribe Norte",530586),
+    new depto ("Costa Caribe Sur",414543),
+    new depto ("Estelí",229866),
+    new depto ("Granada",214317),
+    new depto ("Jinotega",475630),
+    new depto ("León",421050),
+    new depto ("Madriz",174744),
+    new depto ("Managua",1546939),
+    new depto ("Masaya",391903),
+    new depto ("Matagalpa",593503),
+    new depto ("Nueva segovia",271581),
+    new depto ("Río San Juan",135446),
+    new depto ("Rivas",182645);
 }
-
-var ordenado = diccionario.OrderBy(x => x.Value).ToDictionary(x => x.Key, x => x.Value);
-Departamento = ordenado.Keys.ToArray();
-Poblacion = ordenado.Values.ToArray();
-
-for (var i = 0; i < Poblacion.Length; i++)
-    Console.WriteLine($"{Departamento[i],20} ==> {Poblacion[i],10:N0}");
-
-=======
-//Ordenando el diccionario de menor a mayor
-var ordenado = diccionario.OrderBy(x => x.Value).ToDictionary(x => x.Key, x => x.Value);
-//fijando los nombres de los departamentos con menor y mayor poblacion
-string minDepkey = ordenado.First().Key;
-string maxDepkey = ordenado.Last().Key;
-//reasignacion de los arreglos en paralelo
-Departamento = ordenado.Keys.ToArray();
-Poblacion = ordenado.Values.ToArray();
-//mostrar los arreglos ordenados de menor a mayor
-for (var i = 0; i < Poblacion.Length; i++)
-    Console.WriteLine($"{Departamento[i],20} ==> {Poblacion[i],10:N0}");
-//Suma de toda la poblacion y nombre de mayor y menor
->>>>>>> VersionSimple
+//Encontrar el mayor y el menor (poblacion)
+depto minDepto=LstDeptos.Orderby(d=>d.population).First;
+depto maxDepto= LstDeptos.Orderby(d=>d.population).Last;
+//Ordenar los departamentos
+var DeptoOrdenado =LstDeptos.Orderby(d=>d.population);
+//Mostrar departamentos ordenados
+foreach (var item in DeptoOrdenado)
+   System.Console.WriteLine($"{item.Name,-20}==>{item.population,10:NO}");
+//Mostrar el mayor y el menor
+System.Console.WriteLine($"Dpto con menor población:{minDepto.Name}");
+System.Console.WriteLine($"Dpto con mayor población:{maxDepto.Name}");
+//sumar todas las poblaciones con SUM de LINQ
+int total = LstDeptos.Select(d=>d.population).Sum();
+System.Console.WriteLine($"Poblacion general:{total:NO}");
