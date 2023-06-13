@@ -1,0 +1,15 @@
+namespace Departamentos
+{
+    // Clase que define un departamento con su nombre y población
+    public class depto
+    {
+       public string Name {get;set}
+       public int population { get; set; } 
+
+       public depto (string n, int poblacion)
+       {
+        Name = n;
+        population = poblacion;
+       }
+    }
+}
