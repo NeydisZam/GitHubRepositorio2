@@ -23,6 +23,7 @@ List<depto>LstDeptos= new List <depto>()
     new depto ("Río San Juan",135446),
     new depto ("Rivas",182645);
 }
+
 //Encontrar el mayor y el menor (poblacion)
 depto minDepto=LstDeptos.Orderby(d=>d.population).First;
 depto maxDepto= LstDeptos.Orderby(d=>d.population).Last;
