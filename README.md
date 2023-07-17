@@ -5,6 +5,7 @@
 [TOCM]
 
 [TOC]
+[Docxygen_Generado](Docxygen_Generado/html/annotated.html)
 # Introdución
 El videojuego educativo “Math kids” está destinada a dispositivos móviles con sistema operativo Android lo cual permitirá evaluar conocimientos previos, adquiridos durante el proceso de enseñanza aprendizaje, en la asignatura de Matemática en los contenidos de Adición de números naturales hasta 100 y Sustracción de números naturales hasta 100.
 En este manual encontraras la explicación de las actividades propuesta del videojuego educativo que permitirá al usuario ejercitar lo aprendido en clase.
