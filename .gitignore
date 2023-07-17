@@ -1,12 +1,12 @@
 # Archivo de proyecto de c#
 *.csproj
 #carpetas de construccion de proyecto de c#
-ColecDictionary/bin
-ColecDictionary/obj
-ColecDictionary/bin/Debug/**/*.*
-ColecDictionary/obj/Debug/**/*.*
-ColecDictionary/obj/Debug/**/*.*.*
-ColecDictionary/obj/**
-ColecDictionary/obj/*.*
+Script/bin
+Script/obj
+Script/bin/Debug/**/*.*
+Script/obj/Debug/**/*.*.*.*
+Script/obj/Debug/**/*.*.*
+Script/obj/**
+Script/obj/*.*
 #archivos de metadata de unity
 *.meta
