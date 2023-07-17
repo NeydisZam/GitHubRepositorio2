@@ -1,0 +1,101 @@
+\doxysection{Movimientos Class Reference}
+\hypertarget{class_movimientos}{}\label{class_movimientos}\index{Movimientos@{Movimientos}}
+
+
+Clase pública que controla los movimientos del personaje.  
+
+
+Inheritance diagram for Movimientos\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_movimientos}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_movimientos_a743bd42047ebb2b370b24dd541ea6ea3}{click\+Left}} ()
+\item 
+void \mbox{\hyperlink{class_movimientos_adfbef52ebaf20ee8c28cca57a6f02110}{release\+Left}} ()
+\item 
+\Hypertarget{class_movimientos_a2e1d339123533c480487680b62d745fd}\label{class_movimientos_a2e1d339123533c480487680b62d745fd} 
+void {\bfseries click\+Right} ()
+\begin{DoxyCompactList}\small\item\em Método llamado cuando se hace clic en el botón de mover a la derecha. \end{DoxyCompactList}\item 
+\Hypertarget{class_movimientos_aa94bd7071c03cb723f1802ae49239165}\label{class_movimientos_aa94bd7071c03cb723f1802ae49239165} 
+void {\bfseries release\+Right} ()
+\begin{DoxyCompactList}\small\item\em Método llamado cuando se suelta el botón de mover a la derecha. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_movimientos_a4079363c98127bff93e92e5e0636ac75}{click\+Jump}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_movimientos_a59bacaec3dd99eeef15aabe5cee2e4b2}\label{class_movimientos_a59bacaec3dd99eeef15aabe5cee2e4b2} 
+Rigidbody2D {\bfseries rb}
+\begin{DoxyCompactList}\small\item\em Rigidbody del personaje que se moverá. \end{DoxyCompactList}\item 
+\Hypertarget{class_movimientos_abd25c16c9dc5370de9285c000a11048f}\label{class_movimientos_abd25c16c9dc5370de9285c000a11048f} 
+float {\bfseries speed\+Force}
+\begin{DoxyCompactList}\small\item\em Fuerza de movimiento horizontal aplicada al personaje. \end{DoxyCompactList}\item 
+\Hypertarget{class_movimientos_a3c9abcdf427f4730ae9aa0240b693855}\label{class_movimientos_a3c9abcdf427f4730ae9aa0240b693855} 
+float {\bfseries jumpforce}
+\begin{DoxyCompactList}\small\item\em Fuerza de salto aplicada al personaje. \end{DoxyCompactList}\item 
+\Hypertarget{class_movimientos_ab59fbde2707bfd1b9480c3bafda50bf3}\label{class_movimientos_ab59fbde2707bfd1b9480c3bafda50bf3} 
+float {\bfseries waitjump}
+\begin{DoxyCompactList}\small\item\em Tiempo de espera para permitir otro salto. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_movimientos_a12119710d685e1e2a71ee06bd187dc7c}{Fixed\+Update}} ()
+\item 
+\Hypertarget{class_movimientos_ae367ac27aa8a56ff5206abc1fd7a46b9}\label{class_movimientos_ae367ac27aa8a56ff5206abc1fd7a46b9} 
+void {\bfseries wait\+To\+Jump} ()
+\begin{DoxyCompactList}\small\item\em Método que espera un tiempo antes de permitir otro salto. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_movimientos_a43d83e679c698b3b190546e2e08b405d}\label{class_movimientos_a43d83e679c698b3b190546e2e08b405d} 
+bool {\bfseries is\+Left} = false
+\item 
+\Hypertarget{class_movimientos_a42996eb8422771a2544e6e360a4a56aa}\label{class_movimientos_a42996eb8422771a2544e6e360a4a56aa} 
+bool {\bfseries is\+Right} = false
+\item 
+\Hypertarget{class_movimientos_ad681dec2ded44a14cae5c6070e0e3385}\label{class_movimientos_ad681dec2ded44a14cae5c6070e0e3385} 
+bool {\bfseries is\+Jump} = false
+\item 
+\Hypertarget{class_movimientos_a16d865dfa2abd749dcfa5129945f8472}\label{class_movimientos_a16d865dfa2abd749dcfa5129945f8472} 
+bool {\bfseries can\+Jump} = true
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase pública que controla los movimientos del personaje. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_movimientos_a4079363c98127bff93e92e5e0636ac75}\label{class_movimientos_a4079363c98127bff93e92e5e0636ac75} 
+\index{Movimientos@{Movimientos}!clickJump@{clickJump}}
+\index{clickJump@{clickJump}!Movimientos@{Movimientos}}
+\doxysubsubsection{\texorpdfstring{clickJump()}{clickJump()}}
+{\footnotesize\ttfamily void Movimientos.\+click\+Jump (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Método llamado cuando se hace clic en el botón de saltar. \Hypertarget{class_movimientos_a743bd42047ebb2b370b24dd541ea6ea3}\label{class_movimientos_a743bd42047ebb2b370b24dd541ea6ea3} 
+\index{Movimientos@{Movimientos}!clickLeft@{clickLeft}}
+\index{clickLeft@{clickLeft}!Movimientos@{Movimientos}}
+\doxysubsubsection{\texorpdfstring{clickLeft()}{clickLeft()}}
+{\footnotesize\ttfamily void Movimientos.\+click\+Left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Método llamado cuando se hace clic en el botón de mover a la izquierda. \Hypertarget{class_movimientos_a12119710d685e1e2a71ee06bd187dc7c}\label{class_movimientos_a12119710d685e1e2a71ee06bd187dc7c} 
+\index{Movimientos@{Movimientos}!FixedUpdate@{FixedUpdate}}
+\index{FixedUpdate@{FixedUpdate}!Movimientos@{Movimientos}}
+\doxysubsubsection{\texorpdfstring{FixedUpdate()}{FixedUpdate()}}
+{\footnotesize\ttfamily void Movimientos.\+Fixed\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Método que se ejecuta de forma constante en intervalos fijos para aplicar las fuerzas de movimiento y salto al personaje. \Hypertarget{class_movimientos_adfbef52ebaf20ee8c28cca57a6f02110}\label{class_movimientos_adfbef52ebaf20ee8c28cca57a6f02110} 
+\index{Movimientos@{Movimientos}!releaseLeft@{releaseLeft}}
+\index{releaseLeft@{releaseLeft}!Movimientos@{Movimientos}}
+\doxysubsubsection{\texorpdfstring{releaseLeft()}{releaseLeft()}}
+{\footnotesize\ttfamily void Movimientos.\+release\+Left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Método llamado cuando se suelta el botón de mover a la izquierda. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Public/\+Repositorio Neydis 2023/\+Script/Movimientos.\+cs\end{DoxyCompactItemize}

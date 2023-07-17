@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 /// </summary> 
-/// Clase pública llamada <c> Actividad<c> que representa las opciones de falso y verdadero 
+/// Clase pública llamada Actividad que representa las opciones de falso y verdadero 
 /// </summary>
 public class Actividad : MonoBehaviour
 {
